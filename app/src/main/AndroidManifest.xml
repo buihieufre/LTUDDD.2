@@ -13,18 +13,27 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
-            android:name=".MayTinhActivity"
-            android:exported="true" >
+            android:name=".ListView.ListView2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ListView.ListViewActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity
+            android:name=".KetQuaMayTinhActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MayTinhActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="false" />
     </application>
 
 </manifest>
