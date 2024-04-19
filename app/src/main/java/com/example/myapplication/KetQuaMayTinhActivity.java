@@ -30,5 +30,6 @@ public class KetQuaMayTinhActivity extends AppCompatActivity {
         float soThuHai = Float.parseFloat(sot2);
         float tong = soThuNhat +soThuHai;
         tv1.setText(String.valueOf(tong));
+        
     }
 }
