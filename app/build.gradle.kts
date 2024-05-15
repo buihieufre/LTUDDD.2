@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.myapplication"
-        minSdk = 28
+        minSdk = 30
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -39,4 +39,6 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
     implementation("com.android.volley:volley:1.2.1")
     implementation ("com.google.code.gson:gson:2.10.1")
+    implementation ("com.squareup.picasso:picasso:2.8")
+    implementation ("com.github.bumptech.glide:glide:4.16.0")
 }

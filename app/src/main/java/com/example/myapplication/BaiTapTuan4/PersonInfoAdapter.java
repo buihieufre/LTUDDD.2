@@ -49,7 +49,7 @@ class PersonInfoAdapter extends BaseAdapter implements Adapter {
         this.context = context;
     }
 
-    @SuppressLint("WrongViewCast")
+//    @SuppressLint("WrongViewCast")
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         PersonInfo personInfo = (PersonInfo) getItem(position);
