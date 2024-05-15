@@ -7,12 +7,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     tools:context=".BaiTapTuan6.T6ListViewMainActivity"
-    android:fitsSystemWindows="true">
+    android:fitsSystemWindows="true"
+    android:isScrollContainer="true">
 
     <ListView
         android:id="@+id/t6ListView"
         android:layout_width="417dp"
-        android:layout_height="573dp"
+        android:layout_height="771dp"
+        android:fitsSystemWindows="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

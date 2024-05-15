@@ -27,7 +27,7 @@ public class T6VolleyFn2 {
             } catch (JSONException e) {
                 throw new RuntimeException(e);
             }
-            for(int i = 0; i< response.length(); i++){
+            for(int i = 0; i< jsonObject.length(); i++){
                 try {
                     JSONObject obj = jsonObject.getJSONObject(i);
                     GiayInfo giayInfo = new GiayInfo();
