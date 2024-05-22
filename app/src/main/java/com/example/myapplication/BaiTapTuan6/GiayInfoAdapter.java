@@ -2,6 +2,7 @@ package com.example.myapplication.BaiTapTuan6;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -79,7 +80,16 @@ class GiayInfoAdapter extends BaseAdapter implements Adapter {
         viewHolder.brands_filter_facet_holder.setText(giayInfo1.brands_filter_facet);
         viewHolder.price_holder.setText(giayInfo1.price);
         viewHolder.product_additional_info_holder.setText(giayInfo1.product_additional_info);
-
+        convertView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                GiayInfo product = arrayListInfo.get(position);
+                Intent intent = new Intent(context, T7DetailGiayInfo.class);
+                intent.putExtra("PRODUCT",product);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.getApplicationContext().startActivity(intent);
+            }
+        });
         return convertView;
     }
 
